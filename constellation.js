@@ -51,7 +51,7 @@ $(document).ready(function(){
 				width: window.innerWidth,
 				height: window.innerHeight,
 				velocity: 0.1,
-				length: 350,
+				length: 150,
 				distance: 120,
 				radius: 250,
 				stars: []
