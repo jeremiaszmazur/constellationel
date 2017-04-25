@@ -12,13 +12,18 @@ $(document).ready(function(){
     var onMobile = false;
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) { onMobile = true; }
     
-    if( ( onMobile === false ) ) {
-       
+    if( !onMobile ) {  
+		var counter = 50;
         // Init plugin
-		$('canvas').constellation({});
-        
-    } else {}
-    
+		$('body').on('click', function(){
+			if(counter < 1500)
+				counter += 100;
+			$('canvas').remove();
+			$('body').append('<canvas id="constellationel"></canvas>');
+			$('canvas').constellation({length: counter});
+		});
+		$('body').trigger('click');
+    }
 });
 
 /*!
