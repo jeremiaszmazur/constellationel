@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Constellationel</title>
+    <!-- MIT LICENSE ( without photo ) -->
     <style>
         body{
             width: 100%;
@@ -19,11 +20,26 @@
             top: 0;
             position: absolute;
         }
+        a{
+            position: absolute;
+            color: #fff;
+            font-family: sans-serif;
+            opacity: .7;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: opacity .1s ease;
+            z-index: 99;
+        }
+        a:hover{
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./constellation.js"></script>
     <canvas id="constellationel"></canvas>
+    <a href="https://github.com/Cross77/constellationel" target="_blank">https://github.com/Cross77/constellationel</a>
 </body>
 </html>
