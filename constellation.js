@@ -16,7 +16,7 @@ $(document).ready(function(){
 		var counter = 50;
         // Init plugin
 		$('body').on('click', function(){
-			if(counter < 1500)
+			if(counter < 500)
 				counter += 100;
 			$('canvas').remove();
 			$('body').append('<canvas id="constellationel"></canvas>');
